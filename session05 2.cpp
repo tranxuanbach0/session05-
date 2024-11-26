@@ -1,19 +1,20 @@
 #include <stdio.h>
 
-int main(){
-	int sum = 0;
-	int n;
-	do{
-		printf("hay nhap 1 so duong ");
-		scanf("%d",&n);
-		if(n<0){
-			printf("day ko phai so duong\n");
-		}
-	}while (n<0);
-	for (int i=1;i<=n;i++){
-		sum+=i;
-	}
-    printf("tong cac so tu 1 den %d la %d",n,sum);
-    
-	return 0;
+int main() {
+    int target = 25; 
+    int userInput;
+
+    do {
+        printf("Nhap vao mot so: ");
+        scanf("%d", &userInput);
+
+        if (userInput != target) {
+            printf("Sai, hay thu lai!\n");
+        }
+    } while (userInput != target);
+
+    printf("Chinh xac! Ket thuc chuong trinh.\n");
+
+    return 0;
 }
+
